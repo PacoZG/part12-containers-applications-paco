@@ -1,0 +1,42 @@
+Script started on Tue Apr 19 08:55:56 2022
+[1m[7m%[27m[1m[0m                                                                                                                         ]2;sirpacoder@DESKTOP-TAITMPG:~/projects/fullstack/part12-containers-applications]1;..-applications[0m[27m[24m[J[01;32m➜  [36mpart12-containers-applications[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004h[7mdocker container run hello-world[27m[32D[27md[27mo[27mc[27mk[27me[27mr[27m [27mc[27mo[27mn[27mt[27ma[27mi[27mn[27me[27mr[27m [27mr[27mu[27mn[27m [27mh[27me[27ml[27ml[27mo[27m-[27mw[27mo[27mr[27ml[27md[?1l>[?2004l
+]2;docker container run hello-world]1;dockerUnable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+
+[1A[2K7050e35b49f5: Pulling fs layer [1B[1A[2K7050e35b49f5: Downloading [==========>                                        ]     658B/3.208kB[1B[1A[2K7050e35b49f5: Downloading [==================================================>]  3.208kB/3.208kB[1B[1A[2K7050e35b49f5: Verifying Checksum [1B[1A[2K7050e35b49f5: Download complete [1B[1A[2K7050e35b49f5: Extracting [==================================================>]  3.208kB/3.208kB[1B[1A[2K7050e35b49f5: Extracting [==================================================>]  3.208kB/3.208kB[1B[1A[2K7050e35b49f5: Pull complete [1BDigest: sha256:10d7d58d5ebd2a652f4d93fdd86da8f265f5318c6a73cc5b6a9798ff6d2b2e67
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (arm64v8)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+[1m[7m%[27m[1m[0m                                                                                                                         ]2;sirpacoder@DESKTOP-TAITMPG:~/projects/fullstack/part12-containers-applications]1;..-applications[0m[27m[24m[J[01;32m➜  [36mpart12-containers-applications[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004h[7mdocker run -it ubuntu bash[27m[26D[27md[27mo[27mc[27mk[27me[27mr[27m [27mr[27mu[27mn[27m [27m-[27mi[27mt[27m [27mu[27mb[27mu[27mn[27mt[27mu[27m [27mb[27ma[27ms[27mh[?1l>[?2004l
+]2;docker run -it ubuntu bash]1;dockerUnable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+
+[1A[2K185e8a4c1005: Already exists [1BDigest: sha256:9101220a875cee98b016668342c489ff0674f247f6ca20dfc91b91c0f28581ae
+Status: Downloaded newer image for ubuntu:latest
+]0;root@aa5b161c708c: /root@aa5b161c708c:/# mkdri    ir /usr/src/app
+]0;root@aa5b161c708c: /root@aa5b161c708c:/# touch mkdir /usr/src/app[12Ptouch mkdir /usr/src/app[1P[1P[1P[1P[1P[1@t[1@o[1@u[1@c[1@h [K/usr/src/app/index.js
+]0;root@aa5b161c708c: /root@aa5b161c708c:/# [Keix  xit
+exit
+[1m[7m%[27m[1m[0m                                                                                                                         ]2;sirpacoder@DESKTOP-TAITMPG:~/projects/fullstack/part12-containers-applications]1;..-applications[0m[27m[24m[J[01;32m➜  [36mpart12-containers-applications[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004heexit[?1l>[?2004l
+]2;exit]1;exit
+Script done on Tue Apr 19 08:57:47 2022

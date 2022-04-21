@@ -1,0 +1,89 @@
+Script started on Tue Apr 19 14:37:08 2022
+[1m[7m%[27m[1m[0m                                                                                                                                                            ]2;sirpacoder@DESKTOP-TAITMPG:~/projects/fullstack/part12-containers-applications]1;..-applications[0m[27m[24m[J[01;32m➜  [36mpart12-containers-applications[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hscript script-answers/exercise12_8.txt[38Dexit                                  [34Ddocker-compose -f docker-compose.dev.yml down --volumes[55Dscript script-answers/exercise12_8.txt                 [17D[38Dexit                                  [34Ddocker exec -it todo-backend-mongo-1 bash[41Dexit                                     [37Dscript script-answers/exercise12_8.txt[38Dexit                                  [34Ddocker exec -it todo-backend-mongo-1 bash    [24D'[23C[29Dcontainer ls                 [17D[13D-[2Cmpose -f docker-compose.dev.yml updown --volumes[55Dcd todo-app/todo-backend                               [31D[24Dscript script-answers/exercise12_8.txt[38Dcd todo-app/todo-backend              [14D[?1l>[?2004l
+]2;cd todo-app/todo-backend]1;cd[1m[7m%[27m[1m[0m                                                                                                                                                            ]2;sirpacoder@DESKTOP-TAITMPG:~/projects/fullstack/part12-containers-applications/todo-app/todo-backend]1;../todo-backend[0m[27m[24m[J[01;32m➜  [36mtodo-backend[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hcd todo-app/todo-backend[24Dscript script-answers/exercise12_8.txt[38Dexit                                  [34Ddocker-compose -f docker-compose.dev.yml down --volumes[?1l>[?2004l
+]2;docker-compose -f docker-compose.dev.yml down --volumes]1;docker-compose[1A[1B[0G[?25l[+] Running 0/0
+[37m ⠋ Container todo-backend-mongo-1  Stopping                                                                                                            0.1s
+[0m[?25h[1A[1A[0G[?25l[+] Running 2/1
+[34m ⠿ Container todo-backend-mongo-1  Removed                                                                                                             0.2s
+[0m[34m ⠿ Volume todo-backend_mongo_data  Removed                                                                                                             0.0s
+[0m[37m ⠋ Network todo-backend_default    Removing                                                                                                            0.0s
+[0m[?25h[1A[1A[1A[1A[0G[?25l[34m[+] Running 3/3[0m
+[34m ⠿ Container todo-backend-mongo-1  Removed                                                                                                             0.2s
+[0m[34m ⠿ Volume todo-backend_mongo_data  Removed                                                                                                             0.0s
+[0m[34m ⠿ Network todo-backend_default    Removed                                                                                                             0.0s
+[0m[?25h[1m[7m%[27m[1m[0m                                                                                                                                                            ]2;sirpacoder@DESKTOP-TAITMPG:~/projects/fullstack/part12-containers-applications/todo-app/todo-backend]1;../todo-backend[0m[27m[24m[J[01;32m➜  [36mtodo-backend[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hdocker-compose -f docker-compose.dev.yml down --volumes[55Dcd todo-app/todo-backend                               [31D[24Ddocker-compose -f docker-compose.dev.yml down --volumes[55Dcd todo-app/todo-backend                               [31D[24Dscript script-answers/exercise12_8.txt[38Dexit                                  [34Ddocker-compose -f docker-compose.dev.yml down --volumes[55Dscript script-answers/exercise12_8.txt                 [17D[38Dexit                                  [34Ddocker exec -it todo-backend-mongo-1 bash    [24D'[23C[29Dcontainer ls                 [17D[13D-[2Cmpose -f docker-compose.dev.yml up[?1l>[?2004l
+]2;docker-compose -f docker-compose.dev.yml up]1;docker-compose[33mWARN[0m[0000] Found orphan containers ([todo-backend-app-1]) for this project. If you removed or renamed this service in your compose file, you can run this command with the --remove-orphans flag to clean it up. 
+[1A[1B[0G[?25l[+] Running 2/0
+[34m ⠿ Network todo-backend_default      Created                                                                                                           0.1s
+[0m[34m ⠿ Volume "todo-backend_mongo_data"  Created                                                                                                           0.0s
+[0m[37m ⠋ Container todo-backend-mongo-1    Creating                                                                                                          0.0s
+[0m[?25h[1A[1A[1A[1A[0G[?25l[34m[+] Running 3/3[0m
+[34m ⠿ Network todo-backend_default      Created                                                                                                           0.1s
+[0m[34m ⠿ Volume "todo-backend_mongo_data"  Created                                                                                                           0.0s
+[0m[34m ⠿ Container todo-backend-mongo-1    Created                                                                                                           0.0s
+[0m[?25hAttaching to todo-backend-app-1, todo-backend-mongo-1
+Error response from daemon: network 55583bf6803670b4a6b297a63d42363bb54fc7355e9abbdd3c08b514fca4c630 not found
+[1m[7m%[27m[1m[0m                                                                                                                                                            ]2;sirpacoder@DESKTOP-TAITMPG:~/projects/fullstack/part12-containers-applications/todo-app/todo-backend]1;../todo-backend[0m[27m[24m[J[01;31m➜  [36mtodo-backend[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hdocker-compose -f docker-compose.dev.yml updown --volumes[55Dcd todo-app/todo-backend                               [31D[24Dscript script-answers/exercise12_8.txt[38Dexit                                  [34Ddocker-compose -f docker-compose.dev.yml down --volumes[55Dscript script-answers/exercise12_8.txt                 [17D[38Dexit                                  [34Ddocker exec -it todo-backend-mongo-1 bash[?1l>[?2004l
+]2;docker exec -it todo-backend-mongo-1 bash]1;docker]0;root@69a34a480644: /root@69a34a480644:/# [K]0;root@69a34a480644: /root@69a34a480644:/# mongo -u root -p example
+MongoDB shell version v5.0.7
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("1f31b943-82d5-426f-83ed-49d335d7349b") }
+MongoDB server version: 5.0.7
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+Welcome to the MongoDB shell.
+For interactive help, type "help".
+For more comprehensive documentation, see
+	https://docs.mongodb.com/
+Questions? Try the MongoDB Developer Community Forums
+	https://community.mongodb.com
+---
+The server generated these startup warnings when booting: 
+        2022-04-19T11:37:32.333+00:00: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem
+---
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> show dbs[3G[Jshow dbs[11G
+admin         0.000GB
+config        0.000GB
+local         0.000GB
+the_database  0.000GB
+> use the_database[3G[Juse the_database[19G
+switched to db the_database
+> show collections[3G[Jshow collections[19G
+todos
+> db.todos.find({})[3G[Jdb.todos.find({})[20G
+{ "_id" : ObjectId("625e9efbc034be158eb6c3b0"), "text" : "Write code", "done" : true }
+{ "_id" : ObjectId("625e9efbc034be158eb6c3b1"), "text" : "Learn about containers", "done" : false }
+> db.todos.insertOne({"text":"Increase the number of tools in my toolbelt", "done": false })[3G[Jdb.todos.insertOne({"text":"Increase the number of tools in my toolbelt", "done": false })[93G
+{
+	"acknowledged" : true,
+	"insertedId" : ObjectId("625e9fc9324cf7ef8e39429d")
+}
+> [3G[Jdb.todos.insertOne({"text":"Increase the number of tools in my toolbelt", "done": false })[93G[3G[Jdb.todos.find({})[20G[3G[Jshow collections[19G[3G[Jshow collections[19G
+todos
+> [3G[Jshow collections[19G[3G[Jdb.todos.insertOne({"text":"Increase the number of tools in my toolbelt", "done": false })[93G[3G[Jdb.todos.find({})[20G[3G[Jdb.todos.find({})[20G
+{ "_id" : ObjectId("625e9efbc034be158eb6c3b0"), "text" : "Write code", "done" : true }
+{ "_id" : ObjectId("625e9efbc034be158eb6c3b1"), "text" : "Learn about containers", "done" : false }
+{ "_id" : ObjectId("625e9fc9324cf7ef8e39429d"), "text" : "Increase the number of tools in my toolbelt", "done" : false }
+> exit[3G[Jexit[7G
+bye
+]0;root@69a34a480644: /root@69a34a480644:/# exit
+exit
+[1m[7m%[27m[1m[0m                                                                                                                                                            ]2;sirpacoder@DESKTOP-TAITMPG:~/projects/fullstack/part12-containers-applications/todo-app/todo-backend]1;../todo-backend[0m[27m[24m[J[01;32m➜  [36mtodo-backend[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004heexit[?1l>[?2004l
+]2;exit]1;exit
+Script done on Tue Apr 19 14:42:36 2022
