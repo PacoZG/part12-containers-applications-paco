@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "check-code-style": "npx prettier --c .",
+    "fix-code-style": "npx prettier --write ."
+  },
   "dependencies": {
     "prettier": "^2.6.2"
   }

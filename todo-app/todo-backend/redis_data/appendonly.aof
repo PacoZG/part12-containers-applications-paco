@@ -15,3 +15,15 @@ $3
 DEL
 $5
 todos
+*2
+$6
+SELECT
+$1
+0
+*3
+$3
+set
+$5
+todos
+$1
+1
