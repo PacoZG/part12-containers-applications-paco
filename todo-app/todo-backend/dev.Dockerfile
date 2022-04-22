@@ -6,8 +6,8 @@ WORKDIR /usr/src/app
 
 COPY --chown=node:node . .
 
-RUN npm ci --only-production
+RUN npm ci
 
 ENV DEBUG=todo-backend:*
 
-CMD npm start
+CMD npm run dev

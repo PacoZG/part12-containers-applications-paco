@@ -28,7 +28,7 @@ services:
     container_name: todo-backend-dev
     environment:
       - REDIS_URL=//todo-backend-redis-1:6379
-      - MONGO_URL=mongodb://the_username:the_password@todo-backend-mongo-1:27017/the_database
+      - MONGO_URL=mongodb://root:example@mongo:27017/the_database
 
 volumes:
   mongo_data:
