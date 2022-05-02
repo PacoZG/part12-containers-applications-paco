@@ -8,6 +8,4 @@ COPY --chown=node:node . .
 
 RUN npm ci --only-production
 
-ENV DEBUG=todo-backend:*
-
 CMD npm start

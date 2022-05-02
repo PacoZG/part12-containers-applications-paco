@@ -1,26 +1,26 @@
 services:
-  app:
-    image: todo-frontend-dev
-    build:
-      context: ./todo-frontend # The context will pick this directory as the "build context"
-      dockerfile: dev.Dockerfile # This will simply tell which dockerfile to read
-    volumes:
-      - ./todo-frontend:/usr/src/app # The path can be relative, so ./ is enough to say "the same location as the docker-compose.yml"
+  frontend-dev:
+    image: frontend-dev
     ports:
       - 3000:3000
-    container_name: todo-frontend-dev # This will name the container todo-front-dev
+    build:
+      context: ./todo-frontend # The context will pick this directory as the "build context"
+      dockerfile: ./dev.Dockerfile # This will simply tell which dockerfile to read
+    volumes:
+      - ./todo-frontend:/usr/src/app # The path can be relative, so ./ is enough to say "the same location as the docker-compose.dev.yml"
+    container_name: frontend-dev # This will name the container frontend-dev
 
   nginx:
     image: nginx:1.20.1
-    volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf:ro
     ports:
       - 8080:80
+    volumes:
+      - ./nginx.dev.conf:/etc/nginx/nginx.conf:ro
     container_name: reverse-proxy
     depends_on:
-      - app
+      - frontend-dev
 
-  mongo:
+  mongo-dev:
     image: mongo
     ports:
       - 3456:27017
@@ -30,27 +30,25 @@ services:
       MONGO_INITDB_DATABASE: the_database
     volumes:
       - ./todo-backend/mongo/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js
-      - ./todo-backend/mongo_data:/data/db
+      - ./mongo_data:/data/db
 
-  redis:
-    image: 'redis:alpine'
+  redis-dev:
+    image: redis
     ports:
-      - '6379:6379'
+      - 6379:6379
     command: ['redis-server', '--appendonly', 'yes'] # Overwrite the CMD
     volumes: # Declare the volume
-      - ./todo-backend/redis_data:/data
+      - ./redis_data:/data
 
-  server:
-    image: todo-backend
+  backend-dev:
+    image: backend-dev
+    ports:
+      - 3001:3001
     build:
       context: ./todo-backend
       dockerfile: dev.Dockerfile
     volumes:
       - ./todo-backend:/usr/src/app
-    ports:
-      - 3001:3001
     environment:
-      - REDIS_URL=//redis:6379
-      - MONGO_URL=mongodb://root:example@mongo:27017/the_database
-  debug-helper:
-    image: busybox
+      - REDIS_URL=//redis-dev:6379
+      - MONGO_URL=mongodb://root:example@mongo-dev:27017/the_database
